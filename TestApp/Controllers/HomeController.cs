@@ -20,12 +20,14 @@ namespace TestApp.Controllers
 
             string x = "";
 
+
             return View();
         }
 
         [HttpPost]
         public ActionResult Index(HttpPostedFileBase file)
         {
+            //test 2
             if (file != null && file.ContentLength > 0)
                 try
                 {
